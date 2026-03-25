@@ -1,5 +1,7 @@
 # Tiler
 
+[中文](./README.md)
+
 > Note: the backend of this project is mainly developed as a derivative of [atlasdatatech/tiler](https://github.com/atlasdatatech/tiler), with additional work for pause/resume controls, Web-based task management, map preview, tile browser support, single-tile retry, and one-click startup scripts. Thanks to the original author for the open-source work.
 
 `Tiler` is a tile downloading and task management tool for imagery and map tile workflows. It supports GeoJSON-based multi-level download ranges and provides a Web console for task creation, progress tracking, map overlay preview, and single-tile inspection.
