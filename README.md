@@ -1,7 +1,5 @@
 # Tiler
 
-[English](./README-EN.md)
-
 > 说明：本项目后端主要基于 [atlasdatatech/tiler](https://github.com/atlasdatatech/tiler) 进行二次开发，并在此基础上补充了任务暂停/继续、Web 任务管理、地图预览、瓦片浏览器、单瓦片重试和一键启动脚本等能力。感谢原项目作者的开源工作。
 
 `Tiler` 是一个面向影像瓦片抓取与管理的下载工具，支持通过 GeoJSON 范围分级抓取地图瓦片，并提供 Web 控制台用于任务创建、进度查看、地图叠加预览和单瓦片浏览。
