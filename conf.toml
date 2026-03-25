@@ -13,6 +13,10 @@
 	savepipe = 1
 	#min request interval, a speed limit, unit millisecond
 	timedelay = 50
+	#retry times for a single tile after the first failure
+	retrycount = 2
+	#delay between retries, unit millisecond
+	retrydelay = 1000
 
 [tm]
 	#name for mbtiles

@@ -1,0 +1,37 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+server.out.log
+server.err.log
+
+# Build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Task outputs and local runtime state
+output/*
+!output/.gitkeep
+
+# Local SQLite / MBTiles artifacts
+*.db
+*.sqlite
+*.sqlite-journal
+*.db-journal
+*.mbtiles
+*.mbtiles-journal
+
+# Frontend artifacts handled by frontend/.gitignore
+frontend/node_modules/
+frontend/dist/

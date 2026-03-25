@@ -37,16 +37,16 @@ func saveToFiles(tile Tile, task *Task) error {
 }
 
 func optimizeConnection(db *sql.DB) error {
-	// _, err := db.Exec("PRAGMA synchronous=0")
-	// if err != nil {
-	// 	return err
-	// }
-	_, err := db.Exec("PRAGMA locking_mode=EXCLUSIVE")
-	if err != nil {
+	db.SetMaxOpenConns(8)
+	db.SetMaxIdleConns(4)
+
+	if _, err := db.Exec("PRAGMA busy_timeout=5000"); err != nil {
 		return err
 	}
-	_, err = db.Exec("PRAGMA journal_mode=DELETE")
-	if err != nil {
+	if _, err := db.Exec("PRAGMA locking_mode=NORMAL"); err != nil {
+		return err
+	}
+	if _, err := db.Exec("PRAGMA journal_mode=WAL"); err != nil {
 		return err
 	}
 	return nil
